@@ -1,0 +1,38 @@
+{
+  "name": "靓仔的拉片学习工作台",
+  "generated_at": "2026-09-20T08:48:34.719517+00:00",
+  "report_count": 4,
+  "reports": [
+    {
+      "slug": "cheng-main",
+      "title": "程前朋友圈｜厂二代接班完整拉片",
+      "entry": "reports/cheng-main/index.html",
+      "asset_count": 33,
+      "external_reference_count": 8
+    },
+    {
+      "slug": "cheng-type-sfx",
+      "title": "程前朋友圈｜花字重点音效专项",
+      "entry": "reports/cheng-type-sfx/index.html",
+      "asset_count": 42,
+      "external_reference_count": 6
+    },
+    {
+      "slug": "leijun-type-sfx",
+      "title": "雷军主题短片｜花字重点音效专项",
+      "entry": "reports/leijun-type-sfx/index.html",
+      "asset_count": 22,
+      "external_reference_count": 11
+    },
+    {
+      "slug": "human-stories",
+      "title": "《2025，人类写下了哪些故事？》混剪拉片",
+      "entry": "reports/human-stories/index.html",
+      "asset_count": 22,
+      "external_reference_count": 19
+    }
+  ],
+  "file_count": 133,
+  "total_bytes": 13839907,
+  "forbidden_media_count": 0
+}

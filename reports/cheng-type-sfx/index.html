@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《程前朋友圈》花字与重点音效专项拉片</title>
+<style>
+:root{--bg:#0c0e10;--panel:#15191e;--ink:#f4f5f7;--muted:#a8b0ba;--line:#2a3038;--yellow:#f0d632;--red:#e54a36;--green:#9cab48;--cyan:#4dd9c1}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif;line-height:1.72}
+.wrap{max-width:1240px;margin:auto;padding:0 28px} .hero{padding:70px 0 50px;background:radial-gradient(circle at 88% 10%,#564a0f 0,transparent 28%),linear-gradient(135deg,#15191e,#0c0e10 70%)}
+.eyebrow{color:var(--yellow);font-weight:900;letter-spacing:.15em} h1{font-size:clamp(36px,6vw,68px);line-height:1.08;margin:12px 0 18px;max-width:1000px} h2{font-size:32px;margin:0 0 22px} h3{font-size:25px;margin:0} p{color:#d1d6dc} .lead{font-size:20px;max-width:900px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px} .stat{border:1px solid #ffffff17;background:#ffffff09;border-radius:16px;padding:18px} .stat b{display:block;color:var(--yellow);font-size:28px} .stat span{color:var(--muted)}
+nav{position:sticky;top:0;z-index:5;background:#0c0e10ed;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)} nav .wrap{display:flex;gap:18px;overflow:auto;padding-top:13px;padding-bottom:13px} nav a{color:#d8dde2;text-decoration:none;white-space:nowrap;font-weight:700}
+section{padding:54px 0;border-bottom:1px solid var(--line)} .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px} .panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px} .panel h3{font-size:19px;color:var(--yellow)}
+.start{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step} .step{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:20px} .step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--yellow);color:#171717;font-weight:900;margin-bottom:14px}
+.event-list{display:grid;gap:34px} .event{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:24px;overflow:hidden} .event-head{display:flex;align-items:center;gap:16px;margin-bottom:18px} .event-head p{margin:4px 0 0;color:var(--muted)} .num{display:grid;place-items:center;min-width:48px;height:48px;border-radius:14px;background:var(--yellow);color:#131313;font-weight:900}
+.hero-img,.strip{width:100%;display:block;border-radius:14px;background:#050607} .strip{margin-top:18px} .img-label{font-size:13px;color:var(--muted);margin:6px 2px 0}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px} .facts div,.audio,.practice{display:grid;gap:6px;background:#0e1216;border:1px solid var(--line);border-radius:14px;padding:15px} .facts b,.audio b,.practice b{color:var(--yellow)} .facts span,.audio span,.practice span{color:#d8dde2}
+.audio{margin-top:12px;border-left:4px solid var(--cyan)} .audio.warn{border-left-color:#f39b55} .practice{margin-top:12px;border-left:4px solid var(--yellow)}
+.formula{font-size:22px;background:#080a0c;border:1px dashed #68717c;border-radius:16px;padding:20px;text-align:center} .small{color:var(--muted);font-size:14px} table{width:100%;border-collapse:collapse} th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} th{color:var(--yellow)}
+footer{padding:34px 0;color:var(--muted)} @media(max-width:800px){.stats,.grid,.start,.facts{grid-template-columns:1fr} .wrap{padding:0 18px}}
+</style></head><body>
+<header class="hero"><div class="wrap"><div class="eyebrow">TYPOGRAPHY & SFX BREAKDOWN</div><h1>《程前朋友圈》花字与重点音效专项拉片</h1><p class="lead">不再先学一大堆插件。先学会识别“哪个词值得被看见”，再用透明度、缩放和位置三个基础属性做出相同节奏。</p>
+<div class="stats"><div class="stat"><b>21</b><span>组文字画面</span></div><div class="stat"><b>18+3</b><span>18 组强调花字＋3 组片名/资料卡</span></div><div class="stat"><b>0</b><span>高置信可分离短音效</span></div><div class="stat"><b>4</b><span>可复用的文字动画模板</span></div></div></div></header>
+<nav><div class="wrap"><a href="#start">从哪学起</a><a href="#system">四套模板</a><a href="#audio">音效真相</a><a href="#events">21 组逐项拆解</a><a href="#practice">7 天练习</a><a href="../cheng-main/index.html">返回综合拉片</a></div></nav>
+<main>
+<section id="start"><div class="wrap"><h2>你应该从这里学起</h2><div class="start"><div class="step"><h3>先选语义重音</h3><p>一句话最多选 1–2 个词。花字不是把字幕重做一遍，而是给观众一个记忆锤。</p></div><div class="step"><h3>只学三个属性</h3><p>透明度、缩放、位置。先做出 80% 的感觉，再学遮罩、模糊和手写描边。</p></div><div class="step"><h3>卡在口语重音</h3><p>字出现在重读音节前 1–3 帧或同时，不要等一整句说完才加。</p></div><div class="step"><h3>最后再加音效</h3><p>先把无声版做对。若文字不靠音效就能站住，音效才只是加分。</p></div></div></div></section>
+<section id="system"><div class="wrap"><h2>原片其实只在反复用四套模板</h2><div class="grid"><div class="panel"><h3>1. 粗体弹入</h3><p>用于“躺平心态”“为什么”“我提的”。缩放 88%→106%→100%，6–8 帧完成，透明度同步 0→100%。</p></div><div class="panel"><h3>2. 逐行堆叠</h3><p>用于“普通人／牛马／生活”与三项风险。每行延后 6–12 帧，Y 位置从 +20px 回到 0，旧行保留。</p></div><div class="panel"><h3>3. 手写摘句</h3><p>用于管理观、透明工厂与结尾誓言。原片多数是整段淡入，不是复杂的逐笔书写。</p></div><div class="panel"><h3>4. 资料卡扩展</h3><p>用于事故与原料案例。先放一张，再增加到多张。观众先理解问题，然后才承受更高信息密度。</p></div></div><p class="formula">好花字 = 语义重音 × 正确时机 × 一个简单动作</p></div></section>
+<section id="audio"><div class="wrap"><h2>重要发现：原片不是“音效堆出来的”</h2><div class="grid"><div class="panel"><h3>核验结果</h3><p>21 组画面中，15 组未检出可独立区分的短促音效；5 组只有与语音或背景音乐混在一起的能量变化；仅“我提的”出现低频瞬态候选，但置信度仍低。</p></div><div class="panel"><h3>你的混音原则</h3><p>对话永远第一。click、whoosh 和 hit 的瞬时峰值可先放在人声重音之下 10–18 dB；能听清时再降 2 dB。一组逐行花字最多只需一种音色。</p></div></div><p class="small">注：音效判断基于最终混合音轨的中置／侧向能量和频谱瞬态，无法像拿到分轨工程那样独立 solo 某个 SFX，因此不会把低置信候选写成既定事实。</p></div></section>
+<section id="events"><div class="wrap"><h2>21 组花字画面逐项拆解</h2><div class="event-list">
+        <article class="event" id="event-01">
+          <div class="event-head"><span class="num">01</span><div><h3>私生子？</h3><p>00:23.20–00:25.32 · 红色反差梗花字</p></div></div>
+          <img class="hero-img" src="花字截图/01_稳定画面_00-24.05.jpg" alt="私生子？ 稳定画面">
+          <p class="img-label">稳定画面 · 00:24.05</p>
+          <img class="strip" src="花字截图/01_动画序列.jpg" alt="私生子？ 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>画面下方跨越人物分割线</span></div>
+            <div><b>字体与色彩</b><span>红色毛笔字，无底板；问号与主词等大</span></div>
+            <div><b>文字动画</b><span>先无字，随后整体快速淡入／轻微放大；画面中未观察到逐笔书写</span></div>
+            <div><b>为什么有效</b><span>对应采访者笑着说出的意外反问，用红色把轻松笑点与前面的严肃交接冲突拉开</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：23.45s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效。练习时可不加；若加，仅用很轻的木鱼式 click，低于人声峰值约 14–18 dB。</span></div>
+        </article>
+        <article class="event" id="event-02">
+          <div class="event-head"><span class="num">02</span><div><h3>《半山邀》片名卡</h3><p>00:25.32–00:30.36 · 全屏章节片名</p></div></div>
+          <img class="hero-img" src="花字截图/02_稳定画面_00-27.20.jpg" alt="《半山邀》片名卡 稳定画面">
+          <p class="img-label">稳定画面 · 00:27.20</p>
+          <img class="strip" src="花字截图/02_动画序列.jpg" alt="《半山邀》片名卡 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>全屏中央</span></div>
+            <div><b>字体与色彩</b><span>白色大号书法 Logo，黑白背景，局部墨迹与虚焦</span></div>
+            <div><b>文字动画</b><span>超大笔画遮罩入场 → Logo 稳定 → 叠影／扫描扰动 → 淡出回采访</span></div>
+            <div><b>为什么有效</b><span>把 25 秒冷开场与正文问答分开，承担一次视觉和听觉重置</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：25.32s / 28.65s / 29.70s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片入点未检出可单独确认的撞击声。复刻可选 150–250ms 空气扫过＋一次低频软击，只使用一次。</span></div>
+        </article>
+        <article class="event" id="event-03">
+          <div class="event-head"><span class="num">03</span><div><h3>30%–40% 愿意接班／60%–70% 不愿意接班</h3><p>00:30.36–00:36.52 · 统计对照花字</p></div></div>
+          <img class="hero-img" src="花字截图/03_稳定画面_00-35.90.jpg" alt="30%–40% 愿意接班／60%–70% 不愿意接班 稳定画面">
+          <p class="img-label">稳定画面 · 00:35.90</p>
+          <img class="strip" src="花字截图/03_动画序列.jpg" alt="30%–40% 愿意接班／60%–70% 不愿意接班 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左右两侧空白区</span></div>
+            <div><b>字体与色彩</b><span>百分比白字，结论黄色粗体；同时带小型人物身份标签</span></div>
+            <div><b>文字动画</b><span>先出现身份标签，再出现左侧统计，最后补右侧统计；分组依次淡入，形成对照</span></div>
+            <div><b>为什么有效</b><span>把口头比例变成一眼可比较的视觉结论</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：31.20s / 32.55s / 35.45s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效。练习可给第二组数字一个极轻 tick，但不必每个数字都响。</span></div>
+        </article>
+        <article class="event" id="event-04">
+          <div class="event-head"><span class="num">04</span><div><h3>躺平心态</h3><p>00:40.56–00:42.44 · 黄色关键词</p></div></div>
+          <img class="hero-img" src="花字截图/04_稳定画面_00-41.80.jpg" alt="躺平心态 稳定画面">
+          <p class="img-label">稳定画面 · 00:41.80</p>
+          <img class="strip" src="花字截图/04_动画序列.jpg" alt="躺平心态 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物身体旁的低信息区</span></div>
+            <div><b>字体与色彩</b><span>黄色厚重无衬线体，微倾斜，黑色阴影</span></div>
+            <div><b>文字动画</b><span>约 0.3 秒快速透明度＋缩放弹入，随后稳定停留</span></div>
+            <div><b>为什么有效</b><span>把抽象的‘不接班状态’压缩成一个网络化标签</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>检出短促能量变化，但无法与语音或背景音乐分离。检查入点：41.05s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到短促能量变化，但无法与语音／背景音乐分离。复刻可用短 click，音量保持很轻。</span></div>
+        </article>
+        <article class="event" id="event-05">
+          <div class="event-head"><span class="num">05</span><div><h3>大大的疑惑</h3><p>00:42.44–00:45.16 · 反应型弧形花字</p></div></div>
+          <img class="hero-img" src="花字截图/05_稳定画面_00-44.00.jpg" alt="大大的疑惑 稳定画面">
+          <p class="img-label">稳定画面 · 00:44.00</p>
+          <img class="strip" src="花字截图/05_动画序列.jpg" alt="大大的疑惑 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>采访者头顶</span></div>
+            <div><b>字体与色彩</b><span>白色粗体沿弧线排布，配少量装饰符号</span></div>
+            <div><b>文字动画</b><span>随反应镜头切入时已完整出现，主要靠硬切和弧形排版制造喜感；未见明显独立进场</span></div>
+            <div><b>为什么有效</b><span>替观众把疑问写在人物头顶，强化采访者表情</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：42.44s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立音效。不要为了搞笑强行加夸张 boing；表情和硬切已经足够。</span></div>
+        </article>
+        <article class="event" id="event-06">
+          <div class="event-head"><span class="num">06</span><div><h3>普通人／普通牛马／普通生活</h3><p>00:46.68–00:52.16 · 逐行递进列表</p></div></div>
+          <img class="hero-img" src="花字截图/06_稳定画面_00-50.50.jpg" alt="普通人／普通牛马／普通生活 稳定画面">
+          <p class="img-label">稳定画面 · 00:50.50</p>
+          <img class="strip" src="花字截图/06_动画序列.jpg" alt="普通人／普通牛马／普通生活 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物右侧</span></div>
+            <div><b>字体与色彩</b><span>白色粗体三行堆叠，统一左对齐</span></div>
+            <div><b>文字动画</b><span>每说到一个‘普通’，就新增一行；小幅上移＋淡入，旧行保留</span></div>
+            <div><b>为什么有效</b><span>把重复句式变成视觉节拍，让口语排比可被看见</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>检出短促能量变化，但无法与语音或背景音乐分离。检查入点：47.30s / 48.45s / 49.85s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到混合音轨能量变化，但类型不确定。练习可每行配同一枚轻 tick，并让后两次音量略低。</span></div>
+        </article>
+        <article class="event" id="event-07">
+          <div class="event-head"><span class="num">07</span><div><h3>为什么？</h3><p>00:55.92–00:57.00 · 提问花字</p></div></div>
+          <img class="hero-img" src="花字截图/07_稳定画面_00-56.40.jpg" alt="为什么？ 稳定画面">
+          <p class="img-label">稳定画面 · 00:56.40</p>
+          <img class="strip" src="花字截图/07_动画序列.jpg" alt="为什么？ 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>采访者视线方向的空白区</span></div>
+            <div><b>字体与色彩</b><span>白色粗体，小黑影</span></div>
+            <div><b>文字动画</b><span>短时淡入／轻微弹入，保持不到 1 秒</span></div>
+            <div><b>为什么有效</b><span>把追问变成清晰断点，为下一个‘责任、压力’答案蓄力</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>检出短促能量变化，但无法与语音或背景音乐分离。检查入点：56.05s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到能量变化，但很可能来自‘为什么’的语音重音。复刻优先靠停顿，不必加音效。</span></div>
+        </article>
+        <article class="event" id="event-08">
+          <div class="event-head"><span class="num">08</span><div><h3>责任／压力</h3><p>00:57.00–01:02.72 · 双关键词递进</p></div></div>
+          <img class="hero-img" src="花字截图/08_稳定画面_01-01.20.jpg" alt="责任／压力 稳定画面">
+          <p class="img-label">稳定画面 · 01:01.20</p>
+          <img class="strip" src="花字截图/08_动画序列.jpg" alt="责任／压力 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>受访者左右两侧</span></div>
+            <div><b>字体与色彩</b><span>黄色粗体，黑影；‘压力’旁有强调装饰线</span></div>
+            <div><b>文字动画</b><span>先弹入‘责任’，说到下一关键词时再弹入‘压力’，形成左右平衡</span></div>
+            <div><b>为什么有效</b><span>把接班代价收束成两个可以记住的词</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：57.65s / 60.25s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效。复刻时如需强调，可给第二个词加一个低频软击，第一个词不响。</span></div>
+        </article>
+        <article class="event" id="event-09">
+          <div class="event-head"><span class="num">09</span><div><h3>我提的</h3><p>01:22.48–01:23.60 · 回答重点花字</p></div></div>
+          <img class="hero-img" src="花字截图/09_稳定画面_01-23.00.jpg" alt="我提的 稳定画面">
+          <p class="img-label">稳定画面 · 01:23.00</p>
+          <img class="strip" src="花字截图/09_动画序列.jpg" alt="我提的 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>受访者肩部旁</span></div>
+            <div><b>字体与色彩</b><span>黄色斜体粗字，黑色投影</span></div>
+            <div><b>文字动画</b><span>在答案落点快速弹入，0.2–0.3 秒完成</span></div>
+            <div><b>为什么有效</b><span>突出接班是儿子主动提出，而不是父亲安排</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>低频短促瞬态，疑似冲击／下坠。检查入点：82.62s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到低频短促瞬态候选，但置信度低，可能仍是语音／背景层。复刻可用非常轻的 muted hit。</span></div>
+        </article>
+        <article class="event" id="event-10">
+          <div class="event-head"><span class="num">10</span><div><h3>我来当！</h3><p>02:23.10–02:25.36 · 决定性金句</p></div></div>
+          <img class="hero-img" src="花字截图/10_稳定画面_02-24.00.jpg" alt="我来当！ 稳定画面">
+          <p class="img-label">稳定画面 · 02:24.00</p>
+          <img class="strip" src="花字截图/10_动画序列.jpg" alt="我来当！ 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左下方但避开字幕</span></div>
+            <div><b>字体与色彩</b><span>黄色手写体，带感叹号</span></div>
+            <div><b>文字动画</b><span>整体快速缩放／淡入；与‘我来当’四个字同时到位</span></div>
+            <div><b>为什么有效</b><span>把漫长铺垫压缩成一个权力交接决定</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：143.15s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效。更值得模仿的是前面的停顿；若加，只需一次低沉软击。</span></div>
+        </article>
+        <article class="event" id="event-11">
+          <div class="event-head"><span class="num">11</span><div><h3>离职／毫不犹豫</h3><p>03:42.30–03:46.96 · 双色立场对照</p></div></div>
+          <img class="hero-img" src="花字截图/11_稳定画面_03-44.50.jpg" alt="离职／毫不犹豫 稳定画面">
+          <p class="img-label">稳定画面 · 03:44.50</p>
+          <img class="strip" src="花字截图/11_动画序列.jpg" alt="离职／毫不犹豫 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物两侧</span></div>
+            <div><b>字体与色彩</b><span>‘离职’黄色大字，‘毫不犹豫’红色大字；均带黑影</span></div>
+            <div><b>文字动画</b><span>‘离职’先由小变大，随后另一侧补入红色‘毫不犹豫’，用时间差形成因果</span></div>
+            <div><b>为什么有效</b><span>视觉化父亲面对员工离职时的强硬反应</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：223.60s / 225.55s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出可确认的独立音效。复刻可只给红色结论一个低沉 hit，避免两边都响。</span></div>
+        </article>
+        <article class="event" id="event-12">
+          <div class="event-head"><span class="num">12</span><div><h3>把大家所有长处都发挥出来／带着大家一起走</h3><p>04:02.88–04:05.20 · 手写观点摘句</p></div></div>
+          <img class="hero-img" src="花字截图/12_稳定画面_04-03.20.jpg" alt="把大家所有长处都发挥出来／带着大家一起走 稳定画面">
+          <p class="img-label">稳定画面 · 04:03.20</p>
+          <img class="strip" src="花字截图/12_动画序列.jpg" alt="把大家所有长处都发挥出来／带着大家一起走 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>左上至画面中部</span></div>
+            <div><b>字体与色彩</b><span>白色手写体，两行，字距宽松</span></div>
+            <div><b>文字动画</b><span>随镜头切入时整段出现，稳定停留后离开；不是逐字书写动画</span></div>
+            <div><b>为什么有效</b><span>把上一段管理观念留下来，同时画面进入下一句，形成 J-cut 式观点余韵</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>检出短促能量变化，但无法与语音或背景音乐分离。检查入点：242.88s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到能量变化但无法分离。原片观感主要来自手写字与停留时长；不加音效更稳。</span></div>
+        </article>
+        <article class="event" id="event-13">
+          <div class="event-head"><span class="num">13</span><div><h3>！</h3><p>05:49.45–05:52.20 · 情绪符号</p></div></div>
+          <img class="hero-img" src="花字截图/13_稳定画面_05-50.10.jpg" alt="！ 稳定画面">
+          <p class="img-label">稳定画面 · 05:50.10</p>
+          <img class="strip" src="花字截图/13_动画序列.jpg" alt="！ 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>受访者头部左侧</span></div>
+            <div><b>字体与色彩</b><span>白色感叹号＋黑影</span></div>
+            <div><b>文字动画</b><span>从无到有快速缩放弹入，随后停留</span></div>
+            <div><b>为什么有效</b><span>替人物被追问时的反应加一个漫画式标点</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：349.55s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促瞬态。练习可以用 40–80ms 极轻 click，但不是必需。</span></div>
+        </article>
+        <article class="event" id="event-14">
+          <div class="event-head"><span class="num">14</span><div><h3>如何服众？／老员工居多</h3><p>05:53.10–05:58.92 · 问题＋条件叠层</p></div></div>
+          <img class="hero-img" src="花字截图/14_稳定画面_05-56.70.jpg" alt="如何服众？／老员工居多 稳定画面">
+          <p class="img-label">稳定画面 · 05:56.70</p>
+          <img class="strip" src="花字截图/14_动画序列.jpg" alt="如何服众？／老员工居多 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物右侧</span></div>
+            <div><b>字体与色彩</b><span>第一行灰白粗体，其中‘服众’橄榄黄；第二行超大白色粗体，均有黑色错位阴影</span></div>
+            <div><b>文字动画</b><span>先出现问题，再补更大的条件‘老员工居多’；第二行承担重拍</span></div>
+            <div><b>为什么有效</b><span>把一个普通追问升级成具体管理难题</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：353.20s / 355.70s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立音效。复刻时可只给第二行一个短促 whoosh，低于人声峰值约 14 dB。</span></div>
+        </article>
+        <article class="event" id="event-15">
+          <div class="event-head"><span class="num">15</span><div><h3>营收的减少／员工的离职／大家的信赖</h3><p>06:05.20–06:13.40 · 三项风险清单</p></div></div>
+          <img class="hero-img" src="花字截图/15_稳定画面_06-10.70.jpg" alt="营收的减少／员工的离职／大家的信赖 稳定画面">
+          <p class="img-label">稳定画面 · 06:10.70</p>
+          <img class="strip" src="花字截图/15_动画序列.jpg" alt="营收的减少／员工的离职／大家的信赖 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>分屏右侧人物旁</span></div>
+            <div><b>字体与色彩</b><span>白色厚重斜体，黑色错位阴影，三行左对齐</span></div>
+            <div><b>文字动画</b><span>切成双人分屏后，三个风险按台词顺序逐行增加</span></div>
+            <div><b>为什么有效</b><span>把采访者连续三个判断标准变成检查清单</span></div>
+          </div>
+          <div class="audio warn"><b>原片音效核验</b><span>检出短促能量变化，但无法与语音或背景音乐分离。检查入点：365.45s / 366.45s / 368.25s；置信度：低。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>检测到短促能量变化但无法与对话分离。练习时使用同一组轻 tick 即可，不要三次重击。</span></div>
+        </article>
+        <article class="event" id="event-16">
+          <div class="event-head"><span class="num">16</span><div><h3>海外事故证据卡</h3><p>07:56.20–08:00.68 · 资料证据卡</p></div></div>
+          <img class="hero-img" src="花字截图/16_稳定画面_07-58.00.jpg" alt="海外事故证据卡 稳定画面">
+          <p class="img-label">稳定画面 · 07:58.00</p>
+          <img class="strip" src="花字截图/16_动画序列.jpg" alt="海外事故证据卡 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左侧浮层</span></div>
+            <div><b>字体与色彩</b><span>白底网页／资料截图，保留原始排版</span></div>
+            <div><b>文字动画</b><span>镜头切入即出现，基本静态停留；用证据本身而不是花哨动画吸引注意</span></div>
+            <div><b>为什么有效</b><span>为‘中国宠物食品在海外出过事故’补充可见证据</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：476.20s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效。若复刻，可加极轻纸张落位声，但应让口述保持主导。</span></div>
+        </article>
+        <article class="event" id="event-17">
+          <div class="event-head"><span class="num">17</span><div><h3>原料与包装问题资料卡组</h3><p>08:11.20–08:15.72 · 多卡片信息扩展</p></div></div>
+          <img class="hero-img" src="花字截图/17_稳定画面_08-13.50.jpg" alt="原料与包装问题资料卡组 稳定画面">
+          <p class="img-label">稳定画面 · 08:13.50</p>
+          <img class="strip" src="花字截图/17_动画序列.jpg" alt="原料与包装问题资料卡组 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>由左侧小卡扩展至全屏多列</span></div>
+            <div><b>字体与色彩</b><span>保留社媒截图原色，用黄／红框标记问题</span></div>
+            <div><b>文字动画</b><span>单张竖卡出现 → 增加第二张 → 扩展为多卡全屏拼贴；以缩放和位置移动完成</span></div>
+            <div><b>为什么有效</b><span>把抽象的‘投料与包装不符’变成具体案例</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立音效；更可能依靠语音重音和视觉弹入。检查入点：491.20s / 492.10s / 493.20s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>未检出可单独确认的音效。复刻可给首张卡一个 paper pop，后续卡片只用视觉扩展。</span></div>
+        </article>
+        <article class="event" id="event-18">
+          <div class="event-head"><span class="num">18</span><div><h3>很难找到病因／维权很困难／甄别宠物食品很困难</h3><p>08:52.20–08:58.24 · 结论递进列表</p></div></div>
+          <img class="hero-img" src="花字截图/18_稳定画面_08-56.30.jpg" alt="很难找到病因／维权很困难／甄别宠物食品很困难 稳定画面">
+          <p class="img-label">稳定画面 · 08:56.30</p>
+          <img class="strip" src="花字截图/18_动画序列.jpg" alt="很难找到病因／维权很困难／甄别宠物食品很困难 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左侧</span></div>
+            <div><b>字体与色彩</b><span>前两行白色粗体，最后一行黄色；灰黑立体阴影</span></div>
+            <div><b>文字动画</b><span>三行按语义顺序逐条加入，最后黄色总结行承担最高视觉权重</span></div>
+            <div><b>为什么有效</b><span>把消费者困境从现象推进到最终判断</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立音效；更可能依靠语音重音和视觉弹入。检查入点：532.45s / 533.45s / 534.55s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>未检出独立音效，更可能依靠语音重音。复刻时只给黄色最后一行一个轻微低击即可。</span></div>
+        </article>
+        <article class="event" id="event-19">
+          <div class="event-head"><span class="num">19</span><div><h3>开放所有摄像头／给所有客户</h3><p>09:08.50–09:14.00 · 手写承诺摘句</p></div></div>
+          <img class="hero-img" src="花字截图/19_稳定画面_09-11.80.jpg" alt="开放所有摄像头／给所有客户 稳定画面">
+          <p class="img-label">稳定画面 · 09:11.80</p>
+          <img class="strip" src="花字截图/19_动画序列.jpg" alt="开放所有摄像头／给所有客户 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左上方</span></div>
+            <div><b>字体与色彩</b><span>白色手写体，两行</span></div>
+            <div><b>文字动画</b><span>整段快速淡入，不做逐笔书写；伴随手势保持数秒</span></div>
+            <div><b>为什么有效</b><span>把抽象的透明承诺变成具体动作</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立音效；更可能依靠语音重音和视觉弹入。检查入点：548.55s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>未检出独立音效。原片此处靠手势和语义力度，建议不加音效。</span></div>
+        </article>
+        <article class="event" id="event-20">
+          <div class="event-head"><span class="num">20</span><div><h3>打消用户的信任危机／打消用户内心的顾虑</h3><p>09:24.60–09:29.00 · 手写目的摘句</p></div></div>
+          <img class="hero-img" src="花字截图/20_稳定画面_09-26.85.jpg" alt="打消用户的信任危机／打消用户内心的顾虑 稳定画面">
+          <p class="img-label">稳定画面 · 09:26.85</p>
+          <img class="strip" src="花字截图/20_动画序列.jpg" alt="打消用户的信任危机／打消用户内心的顾虑 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左侧</span></div>
+            <div><b>字体与色彩</b><span>白色手写体，两行</span></div>
+            <div><b>文字动画</b><span>整段淡入并停留，没有逐字跳动</span></div>
+            <div><b>为什么有效</b><span>承接上一条‘开放摄像头’，补足目的与价值</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：564.65s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促瞬态。保持安静可让观众更专注于承诺。</span></div>
+        </article>
+        <article class="event" id="event-21">
+          <div class="event-head"><span class="num">21</span><div><h3>我一定要做成！／我也一定能做成！</h3><p>10:07.20–10:11.16 · 结尾誓言手写花字</p></div></div>
+          <img class="hero-img" src="花字截图/21_稳定画面_10-09.30.jpg" alt="我一定要做成！／我也一定能做成！ 稳定画面">
+          <p class="img-label">稳定画面 · 10:09.30</p>
+          <img class="strip" src="花字截图/21_动画序列.jpg" alt="我一定要做成！／我也一定能做成！ 动画序列">
+          <p class="img-label">出现前 → 动画中 → 稳定态</p>
+          <div class="facts">
+            <div><b>放在哪里</b><span>人物左侧</span></div>
+            <div><b>字体与色彩</b><span>白色手写体，两行，感叹号收尾</span></div>
+            <div><b>文字动画</b><span>先出现第一句，再新增第二句；不清空上一行，形成誓言叠加</span></div>
+            <div><b>为什么有效</b><span>把结尾从目标陈述推到人格承诺，完成情绪收束</span></div>
+          </div>
+          <div class="audio ok"><b>原片音效核验</b><span>未检出独立短促瞬态。检查入点：607.25s / 608.95s；置信度：中。</span></div>
+          <div class="practice"><b>你可以这样复刻</b><span>原片未检出独立短促音效；结尾的背景层与语音本身已经抬升。复刻可让音乐微升，不必另加 hit。</span></div>
+        </article></div></div></section>
+<section id="practice"><div class="wrap"><h2>7 天入门练习</h2><table><thead><tr><th>天</th><th>只练什么</th><th>合格标准</th></tr></thead><tbody>
+<tr><td>1</td><td>把底部字幕和花字分开；从自己的 1 分钟素材里只选 5 个重点词。</td><td>删掉任何一个花字，都会损失一个重点。</td></tr>
+<tr><td>2</td><td>复刻“为什么”和“我提的”，只用缩放与透明度。</td><td>8 帧内进场，无廉价弹簧感，不挡脸和字幕。</td></tr>
+<tr><td>3</td><td>复刻“普通人／牛马／生活”逐行列表。</td><td>每行严格卡在对应口语重音，旧行不抢新行。</td></tr>
+<tr><td>4</td><td>复刻手写摘句，先用整体淡入，不学逐笔动画。</td><td>2 行内，至少停留 2 秒，空间和人物视线平衡。</td></tr>
+<tr><td>5</td><td>做一次资料卡扩展：1 张→3 张。</td><td>第一张能单独说明问题；多张后仍有明确主次。</td></tr>
+<tr><td>6</td><td>给第 2–5 天的作业各做“无音效版”与“轻音效版”。</td><td>闭眼听不应该觉得每句都在响；人声始终最清楚。</td></tr>
+<tr><td>7</td><td>用四套模板完成 60 秒采访片段。</td><td>花字不超过 8 组，样式不超过 4 套，同一类信息保持一致。</td></tr>
+</tbody></table></div></section>
+</main><footer><div class="wrap">画面结论来自原片逐帧核对；音效结论来自最终混合音轨，已区分“可核验”与“低置信推断”。</div></footer></body></html>
