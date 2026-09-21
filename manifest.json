@@ -1,7 +1,7 @@
 {
   "name": "靓仔的拉片学习工作台",
-  "generated_at": "2026-09-21T01:42:03.209964+00:00",
-  "report_count": 5,
+  "generated_at": "2026-09-21T09:53:26.631774+00:00",
+  "report_count": 18,
   "reports": [
     {
       "slug": "cheng-main",
@@ -37,9 +37,100 @@
       "entry": "reports/google-year-search-2024/index.html",
       "asset_count": 19,
       "external_reference_count": 9
+    },
+    {
+      "slug": "wenqi-youhenhao",
+      "title": "文淇：你很好",
+      "entry": "reports/wenqi-youhenhao/index.html",
+      "asset_count": 14,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "leijun-full",
+      "title": "雷军：完整问答拉片",
+      "entry": "reports/leijun-full/index.html",
+      "asset_count": 13,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "songjia-mother",
+      "title": "宋佳：固定机位的呼吸感",
+      "entry": "reports/songjia-mother/index.html",
+      "asset_count": 10,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "wang-jiaer-inward",
+      "title": "王嘉尔：问答景别逻辑",
+      "entry": "reports/wang-jiaer-inward/index.html",
+      "asset_count": 13,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "ning-yizhuo-ambition",
+      "title": "宁艺卓：舒适景别切换",
+      "entry": "reports/ning-yizhuo-ambition/index.html",
+      "asset_count": 13,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "short-drama-debate",
+      "title": "短剧：电影感对谈",
+      "entry": "reports/short-drama-debate/index.html",
+      "asset_count": 14,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "liang-jiahui",
+      "title": "梁家辉：人物片头与运动",
+      "entry": "reports/liang-jiahui/index.html",
+      "asset_count": 15,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "cai-kangyong-lazy",
+      "title": "蔡康永：长访谈花字开场",
+      "entry": "reports/cai-kangyong-lazy/index.html",
+      "asset_count": 15,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "mountain-flower",
+      "title": "山是她，花也是她：审美拉片",
+      "entry": "reports/mountain-flower/index.html",
+      "asset_count": 15,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "anda-jiang-limin",
+      "title": "对话安达：企业人物片",
+      "entry": "reports/anda-jiang-limin/index.html",
+      "asset_count": 16,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "her-edition-dongjie",
+      "title": "Her Edition：空镜叙事",
+      "entry": "reports/her-edition-dongjie/index.html",
+      "asset_count": 15,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "middle-aged-women-wisdom",
+      "title": "中女智慧：社交平台再剪辑",
+      "entry": "reports/middle-aged-women-wisdom/index.html",
+      "asset_count": 14,
+      "external_reference_count": 2
+    },
+    {
+      "slug": "the-people-cai-kangyong",
+      "title": "世相×蔡康永：呼吸型长访谈",
+      "entry": "reports/the-people-cai-kangyong/index.html",
+      "asset_count": 18,
+      "external_reference_count": 2
     }
   ],
-  "file_count": 154,
-  "total_bytes": 15207405,
+  "file_count": 367,
+  "total_bytes": 26844502,
   "forbidden_media_count": 0
 }

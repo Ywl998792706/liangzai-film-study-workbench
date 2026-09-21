@@ -126,6 +126,8 @@ const CASES = [
   }
 ];
 
+CASES.push(...(window.EXTRA_CASES || []));
+
 const SKILLS = ["故事结构", "节奏", "B-roll", "花字", "音效", "音乐"];
 
 const QUESTIONS = [
@@ -200,6 +202,8 @@ const QUESTIONS = [
     explanation: "视觉母题要服务自己的主题。档案与书页既能组织改革开放后的时间线，也能让丛书成为叙事终点。"
   }
 ];
+
+QUESTIONS.push(...(window.EXTRA_QUESTIONS || []));
 
 const STORAGE_KEY = "liangzai_breakdown_workbench_v1";
 const defaultState = {
