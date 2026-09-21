@@ -1,7 +1,7 @@
 {
   "name": "靓仔的拉片学习工作台",
-  "generated_at": "2026-09-20T08:48:34.719517+00:00",
-  "report_count": 4,
+  "generated_at": "2026-09-21T01:42:03.209964+00:00",
+  "report_count": 5,
   "reports": [
     {
       "slug": "cheng-main",
@@ -30,9 +30,16 @@
       "entry": "reports/human-stories/index.html",
       "asset_count": 22,
       "external_reference_count": 19
+    },
+    {
+      "slug": "google-year-search-2024",
+      "title": "Google《2024 — Year in Search》混剪拉片",
+      "entry": "reports/google-year-search-2024/index.html",
+      "asset_count": 19,
+      "external_reference_count": 9
     }
   ],
-  "file_count": 133,
-  "total_bytes": 13839907,
+  "file_count": 154,
+  "total_bytes": 15207405,
   "forbidden_media_count": 0
 }
