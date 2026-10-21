@@ -1,136 +1,206 @@
 {
   "name": "靓仔的拉片学习工作台",
-  "generated_at": "2026-09-21T09:53:26.631774+00:00",
-  "report_count": 18,
+  "edition": "public-full-film-v2",
+  "release_date": "2026-10-21",
+  "generated_at": "2026-10-21T01:54:47.820368+00:00",
+  "report_count": 21,
+  "learning_entry_count": 23,
   "reports": [
     {
-      "slug": "cheng-main",
-      "title": "程前朋友圈｜厂二代接班完整拉片",
-      "entry": "reports/cheng-main/index.html",
-      "asset_count": 33,
-      "external_reference_count": 8
+      "id": "cheng-main",
+      "title": "程前朋友圈｜厂二代让父亲退休",
+      "entry": "全片精拉V2/cheng-main/全片精拉报告.html",
+      "images": 251,
+      "duration": 611.16,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "cheng-type-sfx",
-      "title": "程前朋友圈｜花字重点音效专项",
-      "entry": "reports/cheng-type-sfx/index.html",
-      "asset_count": 42,
-      "external_reference_count": 6
+      "id": "wenqi-youhenhao",
+      "title": "文淇致所有女孩：让我们彼此说“你很好”",
+      "entry": "全片精拉V2/wenqi-youhenhao/全片精拉报告.html",
+      "images": 144,
+      "duration": 622.84,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "leijun-type-sfx",
-      "title": "雷军主题短片｜花字重点音效专项",
-      "entry": "reports/leijun-type-sfx/index.html",
-      "asset_count": 22,
-      "external_reference_count": 11
+      "id": "leijun-full",
+      "title": "雷军：我就接着回答这几个问题",
+      "entry": "全片精拉V2/leijun-full/全片精拉报告.html",
+      "images": 41,
+      "duration": 127.86666666666666,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "human-stories",
-      "title": "《2025，人类写下了哪些故事？》混剪拉片",
-      "entry": "reports/human-stories/index.html",
-      "asset_count": 22,
-      "external_reference_count": 19
+      "id": "songjia-mother",
+      "title": "看完采访，宋佳妈妈级别的含金量还在上升",
+      "entry": "全片精拉V2/songjia-mother/全片精拉报告.html",
+      "images": 16,
+      "duration": 26.033333,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "google-year-search-2024",
-      "title": "Google《2024 — Year in Search》混剪拉片",
-      "entry": "reports/google-year-search-2024/index.html",
-      "asset_count": 19,
-      "external_reference_count": 9
+      "id": "wang-jiaer-inward",
+      "title": "对话王嘉尔｜坚定向内 破界向外",
+      "entry": "全片精拉V2/wang-jiaer-inward/全片精拉报告.html",
+      "images": 95,
+      "duration": 181.48,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "wenqi-youhenhao",
-      "title": "文淇：你很好",
-      "entry": "reports/wenqi-youhenhao/index.html",
-      "asset_count": 14,
-      "external_reference_count": 2
+      "id": "ning-yizhuo-ambition",
+      "title": "宁艺卓说有野心从来不是一件坏事",
+      "entry": "全片精拉V2/ning-yizhuo-ambition/全片精拉报告.html",
+      "images": 61,
+      "duration": 169.2,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "leijun-full",
-      "title": "雷军：完整问答拉片",
-      "entry": "reports/leijun-full/index.html",
-      "asset_count": 13,
-      "external_reference_count": 2
+      "id": "short-drama-debate",
+      "title": "短剧的爽感，是解压良方还是情绪麻醉剂？",
+      "entry": "全片精拉V2/short-drama-debate/全片精拉报告.html",
+      "images": 75,
+      "duration": 325.68,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "songjia-mother",
-      "title": "宋佳：固定机位的呼吸感",
-      "entry": "reports/songjia-mother/index.html",
-      "asset_count": 10,
-      "external_reference_count": 2
+      "id": "liang-jiahui",
+      "title": "梁家辉绝不躺平",
+      "entry": "全片精拉V2/liang-jiahui/全片精拉报告.html",
+      "images": 252,
+      "duration": 663.2,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "wang-jiaer-inward",
-      "title": "王嘉尔：问答景别逻辑",
-      "entry": "reports/wang-jiaer-inward/index.html",
-      "asset_count": 13,
-      "external_reference_count": 2
+      "id": "cai-kangyong-lazy",
+      "title": "对话63岁蔡康永：懒人怎么活得好？",
+      "entry": "全片精拉V2/cai-kangyong-lazy/全片精拉报告.html",
+      "images": 287,
+      "duration": 1189.48,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "ning-yizhuo-ambition",
-      "title": "宁艺卓：舒适景别切换",
-      "entry": "reports/ning-yizhuo-ambition/index.html",
-      "asset_count": 13,
-      "external_reference_count": 2
+      "id": "mountain-flower",
+      "title": "山是她，花也是她",
+      "entry": "全片精拉V2/mountain-flower/全片精拉报告.html",
+      "images": 82,
+      "duration": 98.8,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "short-drama-debate",
-      "title": "短剧：电影感对谈",
-      "entry": "reports/short-drama-debate/index.html",
-      "asset_count": 14,
-      "external_reference_count": 2
+      "id": "anda-jiang-limin",
+      "title": "《对话安达》姜利民—步履不停，未来可期",
+      "entry": "全片精拉V2/anda-jiang-limin/全片精拉报告.html",
+      "images": 282,
+      "duration": 836.48,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "liang-jiahui",
-      "title": "梁家辉：人物片头与运动",
-      "entry": "reports/liang-jiahui/index.html",
-      "asset_count": 15,
-      "external_reference_count": 2
+      "id": "her-edition-dongjie",
+      "title": "her edition vol.1｜对话董洁",
+      "entry": "全片精拉V2/her-edition-dongjie/全片精拉报告.html",
+      "images": 52,
+      "duration": 82.28,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "cai-kangyong-lazy",
-      "title": "蔡康永：长访谈花字开场",
-      "entry": "reports/cai-kangyong-lazy/index.html",
-      "asset_count": 15,
-      "external_reference_count": 2
+      "id": "middle-aged-women-wisdom",
+      "title": "今天也是被中女的智慧与温柔滋养的一天",
+      "entry": "全片精拉V2/middle-aged-women-wisdom/全片精拉报告.html",
+      "images": 39,
+      "duration": 109.04,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "mountain-flower",
-      "title": "山是她，花也是她：审美拉片",
-      "entry": "reports/mountain-flower/index.html",
-      "asset_count": 15,
-      "external_reference_count": 2
+      "id": "the-people-cai-kangyong",
+      "title": "世相访谈×蔡康永：绕来绕去，才是人生啊！",
+      "entry": "全片精拉V2/the-people-cai-kangyong/全片精拉报告.html",
+      "images": 163,
+      "duration": 618.96,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "anda-jiang-limin",
-      "title": "对话安达：企业人物片",
-      "entry": "reports/anda-jiang-limin/index.html",
-      "asset_count": 16,
-      "external_reference_count": 2
+      "id": "cheng-zhangxue",
+      "title": "从县城修车工到营收7亿的车企老板",
+      "entry": "全片精拉V2/cheng-zhangxue/全片精拉报告.html",
+      "images": 476,
+      "duration": 952.04,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "her-edition-dongjie",
-      "title": "Her Edition：空镜叙事",
-      "entry": "reports/her-edition-dongjie/index.html",
-      "asset_count": 15,
-      "external_reference_count": 2
+      "id": "shisanyao-li-dongsheng",
+      "title": "那是一个充满可能性的时代｜十三邀×李东生",
+      "entry": "全片精拉V2/shisanyao-li-dongsheng/全片精拉报告.html",
+      "images": 89,
+      "duration": 266.64,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "middle-aged-women-wisdom",
-      "title": "中女智慧：社交平台再剪辑",
-      "entry": "reports/middle-aged-women-wisdom/index.html",
-      "asset_count": 14,
-      "external_reference_count": 2
+      "id": "shisanyao-luo-xiang",
+      "title": "罗翔：人要接受自己的有限性｜十三邀",
+      "entry": "全片精拉V2/shisanyao-luo-xiang/全片精拉报告.html",
+      "images": 24,
+      "duration": 153.96,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     },
     {
-      "slug": "the-people-cai-kangyong",
-      "title": "世相×蔡康永：呼吸型长访谈",
-      "entry": "reports/the-people-cai-kangyong/index.html",
-      "asset_count": 18,
-      "external_reference_count": 2
+      "id": "luyu-dou-wentao",
+      "title": "对话窦文涛，聊聊我们的30年｜陈鲁豫·慢谈EP03",
+      "entry": "全片精拉V2/luyu-dou-wentao/全片精拉报告.html",
+      "images": 1593,
+      "duration": 10342.64,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
+    },
+    {
+      "id": "luo-yonghao-li-xiang",
+      "title": "李想×罗永浩：25年创业之路四小时访谈",
+      "entry": "全片精拉V2/luo-yonghao-li-xiang/全片精拉报告.html",
+      "images": 2834,
+      "duration": 14235.84,
+      "semantic_complete": false,
+      "audio_hearing_verified": false
+    },
+    {
+      "id": "human-stories-montage",
+      "title": "2025，人类写下了哪些故事？",
+      "entry": "全片精拉V2/human-stories-montage/全片精拉报告.html",
+      "images": 718,
+      "duration": 392.866,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
+    },
+    {
+      "id": "google-year-search-2024",
+      "title": "Google｜2024 — Year in Search",
+      "entry": "全片精拉V2/google-year-search-2024/全片精拉报告.html",
+      "images": 294,
+      "duration": 236.236,
+      "semantic_complete": true,
+      "audio_hearing_verified": false
     }
   ],
-  "file_count": 367,
-  "total_bytes": 26844502,
-  "forbidden_media_count": 0
+  "privacy": "两条仅本地自剪复盘、原片、原始全文转写和访客笔记不公开",
+  "canonical_url": "https://ywl998792706.github.io/liangzai-film-study-workbench/",
+  "file_count": 8308,
+  "total_bytes": 315518918,
+  "forbidden_media_count": 0,
+  "private_case_count": 0,
+  "local_path_count": 0
 }

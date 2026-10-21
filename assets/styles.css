@@ -228,6 +228,14 @@ h1 { margin: 9px 0 12px; font-size: clamp(34px, 4.5vw, 62px); line-height: 1.08;
 footer { padding: 35px 5px 55px; color: var(--muted); }
 footer p { margin-bottom: 2px; }
 
+.full-review-banner { display: flex; align-items: center; gap: 24px; margin: 18px 0; padding: 24px; background: #f0f5ed; border: 1px solid #b8cbb0; border-radius: 18px; }
+.full-review-banner h2 { margin: 6px 0; font-size: 23px; line-height: 1.35; }
+.full-review-banner p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.full-review-banner > a { flex-shrink: 0; text-decoration: none; }
+.case-evidence { margin: 10px 0 2px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+.case-archive { display: inline-block; color: var(--muted); font-size: 12px; line-height: 1.7; text-underline-offset: 3px; }
+.dialog-actions .case-archive { align-self: center; padding: 8px 2px; text-decoration: underline; }
+
 .study-dialog { width: min(860px, calc(100vw - 32px)); max-height: min(86vh, 920px); padding: 0; border: 0; border-radius: 20px; color: var(--ink); background: var(--paper); box-shadow: 0 26px 90px #0006; }
 .study-dialog::backdrop { background: #171711b8; backdrop-filter: blur(4px); }
 .dialog-shell { position: relative; padding: 28px; overflow: auto; max-height: inherit; }
@@ -264,6 +272,7 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
 }
 
 @media (max-width: 780px) {
+  .full-review-banner { align-items: flex-start; flex-direction: column; gap: 14px; padding: 20px; }
   .app-shell { display: block; padding: 10px; }
   .sidebar { position: static; min-height: auto; max-height: none; margin-bottom: 12px; padding: 16px; }
   .side-nav { display: flex; overflow-x: auto; margin-top: 14px; }
@@ -310,3 +319,5 @@ button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible
   .hero p, .hero-progress small, .metric span { color: #444; }
   .workspace-section, .today-card, .method-card { box-shadow: none; break-inside: avoid; }
 }
+
+@media(max-width:780px){.side-actions{display:flex;justify-content:flex-start}.side-actions #exportProgress,.side-actions #resetProgress{display:none}.side-actions #copyShareLink{display:block}}

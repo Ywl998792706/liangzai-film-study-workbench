@@ -1,4 +1,4 @@
-﻿shot,in,out,duration,in_seconds,out_seconds,representative_seconds,evidence
+shot,in,out,duration,in_seconds,out_seconds,representative_seconds,evidence
 1,00:00.000,00:02.120,2.120,0.000000,2.120000,0.750000,automatic candidate; manual review required
 2,00:02.120,00:03.120,1.000,2.120000,3.120000,2.570000,automatic candidate; manual review required
 3,00:03.120,00:04.480,1.360,3.120000,4.480000,3.732000,automatic candidate; manual review required

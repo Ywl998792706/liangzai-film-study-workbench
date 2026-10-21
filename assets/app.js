@@ -14,12 +14,12 @@ const CASES = [
     skills: ["故事结构", "节奏", "B-roll", "音乐"],
     focus: "先冲突、后背景；正文按语义正反打，B-roll承担证据而不是装饰。",
     outcomes: [
-      "能说清前60秒为什么快，而不是只会说“镜头很多”。",
+      "能比较开头、正文与后半转折的快慢，而不是只说“镜头很多”。",
       "能区分语义切点、反应切点和机械定时切镜。",
       "能为一句采访台词找到有证明作用的B-roll。"
     ],
     tasks: [
-      "只看前60秒，记录每次切镜是在补信息、制造冲突还是给反应。",
+      "完整浏览全片，分别从开头、正文与后半转折选一段，判断切镜是在补信息、制造冲突还是给反应。",
       "关闭声音重看一次，找出3个仅靠画面仍能理解的证据镜头。",
       "拿自己的采访素材复刻一个15秒“冲突先行”开头。"
     ]
@@ -70,7 +70,7 @@ const CASES = [
     ],
     tasks: [
       "逐一判断11组重点字属于提问、数字、态度还是片尾收束。",
-      "找出一处没有独立音效但仍然有力的文字入点，写出原因。",
+      "找一处文字入点，先看连续帧再试听，分别记录画面与音频证据。",
       "把同一段口播分别按程前风格和雷军风格做两版花字。"
     ]
   },
@@ -94,9 +94,9 @@ const CASES = [
       "能把参考片结构转译成原创主题，而不是照搬素材。"
     ],
     tasks: [
-      "只看03:03—03:36，记录高潮、断电、黑场和第一个人物长镜头。",
+      "完整看过全片后，对照中段与后半一次转折，记录速度、黑场与人物镜头的任务。",
       "为自己的主题写一个开头问题和一个结尾答案。",
-      "按报告中的36段执行表，先完成前60秒占位粗剪。"
+      "按全片章节节点完成占位粗剪，再任选后半一次转折精剪。"
     ]
   },
   {
@@ -119,7 +119,7 @@ const CASES = [
       "能把搜索视觉母题改写成适合家族企业的年份、档案与书页系统。"
     ],
     tasks: [
-      "只看00:00—00:52，标出留白、点火和第一次速度峰值。",
+      "完整比较开场与后半一次速度转折，标出留白、加速和人物落点。",
       "从自己的素材中找三组动作匹配、两组语义匹配和一条音频桥。",
       "按报告模板完成30秒“一个年份＋一个事件”练习片。"
     ]
@@ -127,16 +127,18 @@ const CASES = [
 ];
 
 CASES.push(...(window.EXTRA_CASES || []));
+CASES.push(...(window.EXTRA_CASES_2 || []));
+if (window.applyFullReviewMapping) window.applyFullReviewMapping(CASES);
 
 const SKILLS = ["故事结构", "节奏", "B-roll", "花字", "音效", "音乐"];
 
 const QUESTIONS = [
   {
     caseId: "cheng-main",
-    question: "程前朋友圈案例的前60秒为什么会显得快？",
+    question: "一段采访为什么会显得快？",
     options: ["因为每个镜头都被统一剪成两秒", "因为冲突与证据信息密集，而且切点跟随语义", "因为一直叠加转场和音效"],
     answer: 1,
-    explanation: "快感主要来自信息密度和语义推进。前60秒确实更短，但不是机械定时切镜。"
+    explanation: "先比较信息密度和语义推进，再核对镜头长度；不能只按开头的速度推断整片。"
   },
   {
     caseId: "cheng-main",
@@ -161,10 +163,10 @@ const QUESTIONS = [
   },
   {
     caseId: "leijun-type-sfx",
-    question: "雷军案例里，多数重点字没有独立可确认音效却仍然有力，主要靠什么？",
-    options: ["人物语音重音、文字落点和留白", "立体声左右声像", "每个字不同的字体"],
+    question: "没有完成试听时，花字音效应该怎样记录？",
+    options: ["将画面变化与未核验音频分开，试听后再判断", "根据文字动画猜测whoosh", "只看波形就认定音乐起伏"],
     answer: 0,
-    explanation: "音轨是双单声道，多数入点没有可独立归因的短促音效；力量来自表达和时机。"
+    explanation: "静帧能证明文字位置，不能证明听感；混合音轨波形也不能把变化直接归因音乐或音效。"
   },
   {
     caseId: "leijun-type-sfx",
@@ -204,6 +206,7 @@ const QUESTIONS = [
 ];
 
 QUESTIONS.push(...(window.EXTRA_QUESTIONS || []));
+QUESTIONS.push(...(window.EXTRA_QUESTIONS_2 || []));
 
 const STORAGE_KEY = "liangzai_breakdown_workbench_v1";
 const defaultState = {
@@ -243,6 +246,15 @@ function saveState(message) {
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>'"]/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[char]));
+}
+
+function reportArchiveLink(item) {
+  if (!item.legacyReport) return "";
+  return `<a class="case-archive" href="${escapeHtml(encodeURI(item.legacyReport))}" target="_blank" rel="noreferrer">${escapeHtml(item.legacyLabel)}</a>`;
+}
+
+function reportEvidenceNote(item) {
+  return item.evidenceNote ? `<p class="case-evidence">${escapeHtml(item.evidenceNote)}</p>` : "";
 }
 
 function getProgress(caseId) {
@@ -299,7 +311,7 @@ function renderToday() {
   const target = nextIncompleteTask();
   const card = $("#todayCard");
   if (!target) {
-    card.innerHTML = `<div class="today-copy"><span class="section-label">今天做什么</span><h2>四份报告已经走完一遍</h2><p>下一步不要继续收藏案例。挑一条自己的素材，完整复刻一次结构、字幕和声音层级。</p><div class="today-actions"><button class="gold-button" type="button" data-open-study="human-stories-montage">查看进阶练习</button></div></div><img class="today-cover" src="assets/covers/human-stories.jpg" alt="年度混剪案例封面">`;
+    card.innerHTML = `<div class="today-copy"><span class="section-label">今天做什么</span><h2>当前案例练习已完成一轮</h2><p>挑一条自己的成片，完整复刻一次结构、字幕和声音层级，再对照后半转折。</p><div class="today-actions"><button class="gold-button" type="button" data-open-study="cheng-main">选择下一个案例</button></div></div><img class="today-cover" src="assets/covers/human-stories.jpg" alt="年度混剪案例封面">`;
     bindDynamicButtons(card);
     return;
   }
@@ -310,7 +322,7 @@ function renderToday() {
       <h2>${escapeHtml(item.title)}</h2>
       <p>${escapeHtml(item.tasks[index])}</p>
       <div class="today-meta"><span class="tag">${escapeHtml(item.type)}</span><span class="tag">${escapeHtml(item.duration)}</span><span class="tag">练习 ${index + 1}/${item.tasks.length}</span></div>
-      <div class="today-actions"><a class="gold-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">打开完整报告</a><button class="light-button" type="button" data-complete-today="${item.id}:${index}">完成这一步</button></div>
+      <div class="today-actions"><a class="gold-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">打开全片报告</a><button class="light-button" type="button" data-complete-today="${item.id}:${index}">完成这一步</button></div>
     </div>
     <img class="today-cover" src="${item.cover}" alt="${escapeHtml(item.title)}封面">
   `;
@@ -352,12 +364,14 @@ function renderLibrary() {
             <div class="case-progress-head"><span>${statusLabel(item.id)}</span><b>${progress}%</b></div>
             <div class="progress-track"><i style="width:${progress}%"></i></div>
           </div>
-          <div class="case-actions"><button class="light-button" type="button" data-open-study="${item.id}">学习详情</button><a class="dark-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">打开报告</a></div>
+          ${reportEvidenceNote(item)}
+          <div class="case-actions"><button class="light-button" type="button" data-open-study="${item.id}">学习详情</button><a class="dark-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">全片报告</a></div>
+          ${reportArchiveLink(item)}
         </div>
       </article>
     `;
   }).join("");
-  $("#resultCount").textContent = `${items.length} 份报告`;
+  $("#resultCount").textContent = `${items.length} 个学习入口`;
   $("#emptyState").hidden = items.length !== 0;
   bindDynamicButtons(library);
 }
@@ -406,7 +420,8 @@ function openStudy(caseId) {
     <h3>动手练习</h3><div class="practice-list">${item.tasks.map((task, index) => { const key = `${item.id}:${index}`; return `<label class="practice-item"><input type="checkbox" data-task-key="${key}" ${state.tasks[key] ? "checked" : ""}><span>${escapeHtml(task)}</span></label>`; }).join("")}</div>
     <label class="progress-control"><span>总体学习进度</span><output id="dialogProgressValue">${progress}%</output><input id="dialogProgress" type="range" min="0" max="100" step="25" value="${progress}" aria-label="总体学习进度"></label>
     <label class="notes-label"><span>我的拉片笔记</span><textarea id="caseNotes" placeholder="例如：这条片最值得我复刻的一刀是什么？">${escapeHtml(state.notes[item.id] || "")}</textarea></label>
-    <div class="dialog-actions"><a class="gold-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">打开完整报告</a><button class="outline-button" type="button" id="saveStudy">保存学习记录</button></div>
+    ${reportEvidenceNote(item)}
+    <div class="dialog-actions"><a class="gold-button" href="${encodeURI(item.report)}" target="_blank" rel="noreferrer">打开全片报告</a><button class="outline-button" type="button" id="saveStudy">保存学习记录</button>${reportArchiveLink(item)}</div>
   `;
   $("#dialogProgress").addEventListener("input", event => { $("#dialogProgressValue").textContent = `${event.target.value}%`; });
   $("#saveStudy").addEventListener("click", saveActiveStudy);

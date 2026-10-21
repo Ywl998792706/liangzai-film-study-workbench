@@ -1,0 +1,1 @@
+const SHARE_URL="https://ywl998792706.github.io/liangzai-film-study-workbench/";document.getElementById('copyShareLink').addEventListener('click',async()=>{const b=document.getElementById('copyShareLink');try{await navigator.clipboard.writeText(SHARE_URL);b.textContent='链接已复制';setTimeout(()=>b.textContent='复制分享链接',2200)}catch{window.prompt('复制这个链接即可分享',SHARE_URL)}});

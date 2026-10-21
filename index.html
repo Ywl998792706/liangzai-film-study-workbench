@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light"><meta name="description" content="靓仔的公开拉片学习工作台：采访与混剪的全片时间轴、重点花字、实帧截图和复现练习，无需登录即可学习。"><link rel="canonical" href="https://ywl998792706.github.io/liangzai-film-study-workbench/">
   <title>靓仔的拉片学习工作台</title>
   <link rel="stylesheet" href="assets/styles.css">
-</head>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23b6985b%22/%3E%3Cpath d=%22M18 20v24m14-29v34m14-25v16%22 stroke=%22white%22 stroke-width=%225%22/%3E%3C/svg%3E"></head>
 <body>
   <a class="skip-link" href="#mainContent">跳到主要内容</a>
   <div class="app-shell">
@@ -21,6 +21,7 @@
       <nav class="side-nav">
         <a class="active" href="#dashboard">今日学习</a>
         <a href="#library">全部拉片</a>
+        <a href="全片精拉V2/index.html">全片精拉 V2</a>
         <a href="#path">学习路径</a>
         <a href="#skills">能力地图</a>
         <a href="#quiz">复盘自测</a>
@@ -29,11 +30,11 @@
         <b>学习原则</b>
         <p>先看懂“为什么这样剪”，再模仿“具体怎么做”。</p>
       </div>
-      <div class="side-actions">
+      <div class="side-actions"><button id="copyShareLink" class="gold-button" type="button">复制分享链接</button>
         <button id="exportProgress" class="ghost-button" type="button">导出学习记录</button>
         <button id="resetProgress" class="text-button" type="button">重置本机进度</button>
       </div>
-      <small class="storage-note">进度与笔记仅保存在当前浏览器。</small>
+      <small class="storage-note">进度与笔记仅保存在各自的浏览器，不会向其他访客公开；换设备可导出备份。</small>
     </aside>
 
     <main id="mainContent">
@@ -48,11 +49,20 @@
           <div><strong id="progressLabel">准备开始</strong><small id="progressCaption">从第一份报告建立基础</small></div>
         </div>
         <div class="metrics" aria-label="工作台统计">
-          <div class="metric"><strong id="metricReports">18</strong><span>份拉片报告</span></div>
-          <div class="metric"><strong id="metricCases">16</strong><span>条真实案例</span></div>
+          <div class="metric"><strong id="metricReports">23</strong><span>个学习入口</span></div>
+          <div class="metric"><strong id="metricCases">21</strong><span>条独特素材</span></div>
           <div class="metric"><strong id="metricCompleted">0</strong><span>份已完成</span></div>
-          <div class="metric"><strong id="metricTasks">0/54</strong><span>练习已完成</span></div>
+          <div class="metric"><strong id="metricTasks">0/75</strong><span>练习已完成</span></div>
         </div>
+      </section>
+
+      <section class="full-review-banner" aria-label="全片精拉新版入口">
+        <div>
+          <span class="section-label">全片精拉 V2 · 公开学习版</span>
+          <h2>从第一帧到片尾，不只看前一分钟。</h2>
+          <p>21条公开案例的全片时间轴与真实帧。重点花字、转折另做复核；自动候选不等于逐刀确认，音乐与音效未人工听核。</p>
+        </div>
+        <a class="gold-button" href="全片精拉V2/index.html">进入全片精拉 V2</a>
       </section>
 
       <section class="today-grid" aria-label="今日学习建议">
@@ -73,7 +83,7 @@
 
       <section class="workspace-section" id="library">
         <header class="section-header">
-          <div><span class="section-label">案例库</span><h2>全部拉片</h2><p>完整报告负责建立系统，专项报告负责练一项能力。</p></div>
+          <div><span class="section-label">案例库</span><h2>全部拉片</h2><p>全片报告是主入口；旧花字专项保留为存档副链接。学习进度与笔记继续沿用。</p></div>
           <div class="view-switch" role="group" aria-label="切换案例视图">
             <button class="active" type="button" data-view="cards" aria-pressed="true">卡片</button>
             <button type="button" data-view="list" aria-pressed="false">列表</button>
@@ -82,12 +92,12 @@
 
         <div class="filters" aria-label="筛选拉片报告">
           <label><span>搜索</span><input id="searchInput" type="search" placeholder="片名、能力或关键词"></label>
-          <label><span>类型</span><select id="typeFilter"><option value="all">全部类型</option><option value="采访">采访</option><option value="混剪">混剪</option></select></label>
+          <label><span>类型</span><select id="typeFilter"><option value="all">全部类型</option><option value="采访">采访</option><option value="混剪">混剪</option><option value="自剪复盘">自剪复盘</option></select></label>
           <label><span>能力</span><select id="skillFilter"><option value="all">全部能力</option><option>故事结构</option><option>节奏</option><option>B-roll</option><option>花字</option><option>音效</option><option>音乐</option></select></label>
           <label><span>进度</span><select id="statusFilter"><option value="all">全部进度</option><option value="not-started">未开始</option><option value="learning">学习中</option><option value="completed">已完成</option></select></label>
           <button id="clearFilters" class="dark-button" type="button">清空筛选</button>
         </div>
-        <div class="result-meta"><span id="resultCount">5 份报告</span><span>点击“学习详情”记录练习与笔记</span></div>
+        <div class="result-meta"><span id="resultCount">25 个学习入口</span><span>点击“学习详情”记录练习与笔记</span></div>
         <div id="caseLibrary" class="case-library cards-view"></div>
         <p id="emptyState" class="empty-state" hidden>没有符合当前筛选条件的报告。</p>
       </section>
@@ -124,8 +134,8 @@
       </section>
 
       <footer>
-        <p>当前收录18份报告：采访完整拉片、花字音效专项、长访谈、企业人物片、审美短片与年度混剪。</p>
-        <small>13条新增小红书采访均含全片章节、逐秒重点、节奏图与复刻练习。</small>
+        <p>23个学习入口，21条公开案例：采访、企业人物、长对话与年度混剪。</p>
+        <small>公开学习版无需登录。私人自剪复盘和原始音视频不公开；旧版报告作为存档保留。时间轴覆盖不等于逐刀或声音已全部核验。</small>
       </footer>
     </main>
   </div>
@@ -139,6 +149,8 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="assets/extra-cases.js"></script>
-  <script src="assets/app.js"></script>
+  <script src="assets/extra-cases-2.js"></script>
+  <script src="assets/full-review.js"></script>
+  <script src="assets/app.js"></script><script src="assets/share.js"></script>
 </body>
 </html>
